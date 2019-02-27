@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MeasureARPusher" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bb7-aC-2zu" userLabel="SceneView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zj-Wa-kMw">
+                                <rect key="frame" x="176" y="322" width="22" height="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ARt-av-jUU">
+                                <rect key="frame" x="312" y="616" width="49" height="31"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Kut-FV-aE4"/>
+                                </connections>
+                            </switch>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijS-uS-Ir0" userLabel="Status Text View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="y8f-bX-f3P"/>
+                                </constraints>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Bb7-aC-2zu" secondAttribute="bottom" id="2pX-EA-gx6"/>
+                            <constraint firstAttribute="trailing" secondItem="Bb7-aC-2zu" secondAttribute="trailing" id="D8M-eT-3Y5"/>
+                            <constraint firstItem="Bb7-aC-2zu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MQS-db-Fth"/>
+                            <constraint firstItem="ijS-uS-Ir0" firstAttribute="trailing" secondItem="Bb7-aC-2zu" secondAttribute="trailing" id="NhF-8S-7vt"/>
+                            <constraint firstItem="1zj-Wa-kMw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="176" id="PmI-aT-Jnl"/>
+                            <constraint firstItem="ARt-av-jUU" firstAttribute="trailing" secondItem="Bb7-aC-2zu" secondAttribute="trailing" constant="-20" id="Xdc-as-uJD"/>
+                            <constraint firstItem="ijS-uS-Ir0" firstAttribute="top" secondItem="Bb7-aC-2zu" secondAttribute="top" id="dPd-mk-gwn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1zj-Wa-kMw" secondAttribute="trailing" constant="177" id="fEW-9k-HHY"/>
+                            <constraint firstItem="1zj-Wa-kMw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="302" id="hhT-Ea-M9i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1zj-Wa-kMw" secondAttribute="bottom" constant="323" id="jIG-Vd-jrg"/>
+                            <constraint firstItem="ARt-av-jUU" firstAttribute="bottom" secondItem="Bb7-aC-2zu" secondAttribute="bottom" constant="-20" id="oBG-yW-Tqm"/>
+                            <constraint firstItem="Bb7-aC-2zu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oQ2-z9-9Sl"/>
+                            <constraint firstItem="ijS-uS-Ir0" firstAttribute="leading" secondItem="Bb7-aC-2zu" secondAttribute="leading" id="zqp-MP-XE9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="Bb7-aC-2zu" id="oaR-g7-7qV"/>
+                        <outlet property="statusTextView" destination="ijS-uS-Ir0" id="zy2-A4-vXt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
